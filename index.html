@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería de Arte</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header,
+        footer {
+            text-align: center;
+            background-color: #555b6eff;
+            /* Paynes Gray */
+            color: #fff;
+            /* Texto blanco */
+            padding: 20px 0;
+        }
+
+        nav {
+            text-align: center;
+            background-color: #89b0aeff;
+            /* Cambridge Blue */
+            padding: 10px 0;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #333;
+            /* Texto gris oscuro */
+            padding: 0 15px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 20px;
+        }
+
+        .gallery img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        form {
+            margin-top: 20px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"] {
+            background-color: #ffd6baff;
+            /* Apricot */
+            color: #fff;
+            /* Texto blanco */
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        /* Oculta todas las secciones por defecto */
+        .container>section {
+            display: none;
+        }
+
+        /* Muestra la sección actualmente seleccionada */
+        .container>section:target {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Un Nuevo Aire</h1>
+        <h2>Galería de Arte</h2>
+        <p>¡Explora nuestra colección de arte!</p>
+    </header>
+
+    <nav>
+        <a href="#inicio">Inicio</a>
+        <a href="#galeria">Galería</a>
+        <a href="#contacto">Contacto</a>
+    </nav>
+
+    <div class="container">
+        <section id="inicio">
+            <h2>¡Bienvenido!</h2>
+            <h3>Descubre obras de arte impresionantes y creativas en nuestra galería.</h3>
+            <h4>Contamos con la colaboración de distintos artistas destacados internacionalmente.</h4>
+            <h5>¡Agregaremos más información las próximas semanas!</h5>
+            <p>El sitio web aún está en desarrollo, disculpen las molestias que esto pudiese ocasionar.</p>
+        </section>
+
+        <section id="galeria">
+            <h2>Galería de fotos</h2>
+            <h3>Estas son algunas de las obras que puedes encontrar ¡agregamos nuevas obras todos los meses!</h3>
+            <p>La primera es una pintura en óleo, la segunda una escultura y la tercera una fotografía. Todos de artistas renombrados internacionalmente.</p>
+            <div class="gallery">
+                <img src="Cuadro 1.png" alt="Obra de arte: Pintura">
+                <img src="Escultura 1.png" alt="Obra de arte: Escultura">
+                <img src="Fotografía 1.png" alt="Obra de arte: Fotografía">
+            </div>
+        </section>
+
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <h3>Escríbenos si necesitas más información.</h3>
+            <form>
+                <input type="text" name="nombre" placeholder="Nombre" required><br>
+                <input type="email" name="email" placeholder="Correo electrónico" required><br>
+                <input type="tel" name="telefono" placeholder="Teléfono" required><br>
+                <textarea name="mensaje" placeholder="Mensaje" rows="4" required></textarea><br>
+                <input type="submit" value="Enviar">
+            </form>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Galería de Arte</p>
+    </footer>
+
+</body>
+
+</html>
