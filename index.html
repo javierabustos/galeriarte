@@ -4,140 +4,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Galería de Arte</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-
-        header,
-        footer {
-            text-align: center;
-            background-color: #555b6eff;
-            /* Paynes Gray */
-            color: #fff;
-            /* Texto blanco */
-            padding: 20px 0;
-        }
-
-        nav {
-            text-align: center;
-            background-color: #89b0aeff;
-            /* Cambridge Blue */
-            padding: 10px 0;
-        }
-
-        nav a {
-            text-decoration: none;
-            color: #333;
-            /* Texto gris oscuro */
-            padding: 0 15px;
-        }
-
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-
-        .gallery {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-            gap: 20px;
-        }
-
-        .gallery img {
-            max-width: 100%;
-            height: auto;
-        }
-
-        form {
-            margin-top: 20px;
-        }
-
-        input[type="text"],
-        input[type="email"],
-        input[type="tel"],
-        textarea {
-            width: 100%;
-            padding: 10px;
-            margin-bottom: 10px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            box-sizing: border-box;
-        }
-
-        input[type="submit"] {
-            background-color: #ffd6baff;
-            /* Apricot */
-            color: #fff;
-            /* Texto blanco */
-            border: none;
-            padding: 10px 20px;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-
-        /* Oculta todas las secciones por defecto */
-        .container>section {
-            display: none;
-        }
-
-        /* Muestra la sección actualmente seleccionada */
-        .container>section:target {
-            display: block;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
 
     <header>
         <h1>Un Nuevo Aire</h1>
-        <h2>Galería de Arte</h2>
-        <p>¡Explora nuestra colección de arte!</p>
+        <h2>Sumérgete en el mundo del arte y encuentra inspiración para tu alma</h2>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="galeriafotos.html">Galería de Fotos</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
     </header>
-
-    <nav>
-        <a href="#inicio">Inicio</a>
-        <a href="#galeria">Galería</a>
-        <a href="#contacto">Contacto</a>
-    </nav>
-
-    <div class="container">
-        <section id="inicio">
-            <h2>¡Bienvenido!</h2>
-            <h3>Descubre obras de arte impresionantes y creativas en nuestra galería.</h3>
-            <h4>Contamos con la colaboración de distintos artistas destacados internacionalmente.</h4>
-            <h5>¡Agregaremos más información las próximas semanas!</h5>
-            <p>El sitio web aún está en desarrollo, disculpen las molestias que esto pudiese ocasionar.</p>
-        </section>
-
-        <section id="galeria">
-            <h2>Galería de fotos</h2>
-            <h3>Estas son algunas de las obras que puedes encontrar ¡agregamos nuevas obras todos los meses!</h3>
-            <p>La primera es una pintura en óleo, la segunda una escultura y la tercera una fotografía. Todos de artistas renombrados internacionalmente.</p>
-            <div class="gallery">
-                <img src="Cuadro 1.png" alt="Obra de arte: Pintura">
-                <img src="Escultura 1.png" alt="Obra de arte: Escultura">
-                <img src="Fotografía 1.png" alt="Obra de arte: Fotografía">
-            </div>
-        </section>
-
-        <section id="contacto">
-            <h2>Contacto</h2>
-            <h3>Escríbenos si necesitas más información.</h3>
-            <form>
-                <input type="text" name="nombre" placeholder="Nombre" required><br>
-                <input type="email" name="email" placeholder="Correo electrónico" required><br>
-                <input type="tel" name="telefono" placeholder="Teléfono" required><br>
-                <textarea name="mensaje" placeholder="Mensaje" rows="4" required></textarea><br>
-                <input type="submit" value="Enviar">
-            </form>
-        </section>
-    </div>
+    <section class="mainBodySection">
+        <div class="central">
+            <h2>¡Bienvenido a nuestra galería de arte! Espacio donde la creatividad cobra vida y las emociones
+                encuentran su expresión más profunda</h2>
+            <p> En nuestro santuario del arte, explorarás un mundo de belleza, innovación y significado, donde cada obra
+                cuenta una historia única y cada visita es una aventura enriquecedora. Únete a nosotros en este viaje
+                fascinante, donde la belleza y el significado se entrelazan en una experiencia única e inolvidable.</p>
+        </div>
+        <h3>¿Quienes somos?</h3>
+        <p>Somos un espacio dedicado a celebrar la belleza y la creatividad en todas sus formas. En nuestra galería,
+            buscamos ofrecer una experiencia única donde el arte cobra vida y se convierte en una ventana hacia la
+            imaginación y la emoción. Desde las obras maestras clásicas hasta las expresiones contemporáneas más
+            vanguardistas, nuestra colección abarca una amplia variedad de estilos, técnicas y visiones artísticas.
+        </p>
+        <p>Nos enorgullece ser un destino para artistas emergentes y establecidos por igual, brindando un escaparate
+            para sus talentos y una plataforma para la exploración artística.</p>
+        <p>Con exposiciones rotativas y eventos culturales, nuestra misión es inspirar, educar y conectar a nuestra
+            comunidad a través del poder transformador del arte.</p>
+    </section>
 
     <footer>
         <p>&copy; 2024 Galería de Arte</p>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Un Nuevo Aire</h1>
+        <h2>Sumérgete en el mundo del arte y encuentra inspiración para tu alma</h2>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="galeriafotos.html">Galería de Fotos</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="containerContact">
+        <div class="central">
+            <h2>Formulario de Contacto</h2>
+        </div>
+        <p>Póngase en contacto con nosotros para mayor información:</p>
+        <form action="#" method="POST">
+            <div class="form-group">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+                <span class="error-message">Por favor, introduce tu nombre.</span>
+            </div>
+            <div class="form-group">
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" required>
+                <span class="error-message">Por favor, introduce un correo electrónico válido.</span>
+            </div>
+            <div class="form-group">
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono">
+            </div>
+            <div class="form-group">
+                <label for="direccion">Dirección:</label>
+                <input type="text" id="direccion" name="direccion">
+            </div>
+            <div class="form-group">
+                <label for="tipo_solicitud">Tipo de Solicitud:</label>
+                <select id="tipo_solicitud" name="tipo_solicitud" required>
+                    <option value="">Seleccione...</option>
+                    <option value="compra">Compra</option>
+                    <option value="consulta">Consulta</option>
+                    <option value="venta">Venta</option>
+                </select>
+                <span class="error-message">Por favor, selecciona el tipo de solicitud.</span>
+            </div>
+            <div class="form-group">
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+                <span class="error-message">Por favor, escribe un mensaje.</span>
+            </div>
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+</body>
+
+</html>
