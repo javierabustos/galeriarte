@@ -3,50 +3,101 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería de Arte - Galería de Fotos</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
 
 <body>
     <header>
-        <h1>Un Nuevo Aire</h1>
-        <h2>Sumérgete en el mundo del arte y encuentra inspiración para tu alma</h2>
-        <nav>
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="galeriafotos.html">Galería de Fotos</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand nav-title" href="index.html">Un Nuevo Aire</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="galeriafotos.html">Galería de Fotos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
         </nav>
     </header>
-    <section class="mainBodySection">
-        <div class="central">
-            <h2>Galería de Fotos</h2>
-            <h3>Nuestra galería se centra en el mundo diverso que otorga el arte, englobamos variados tipos de
-                expresiones artísticas</h3>
-            <h4>Contamos con la colaboración de artístas reconocidos internacionalmente.</h4>
-            <p>La primera es una pintura en óleo titulada “Cumbres Serenas”, en donde la naturaleza cobra vida a través
-                de pinceladas vibrantes y colores exuberantes. La segunda es una pintura en acuarela titulada “Susurros
-                del Alba” donde la quietud del amanecer se entrelaza con el suave canto de los pájaros. La tercera, una
-                escultura titulada “Flujo” que representa la fusión entre la fuerza natural y la quietud del alma. La
-                cuarta es una fotografía titulada “Luz y Perspectiva” que captura la esencia de la modernidad y la
-                creatividad arquitectónica.</p>
-            <section>
-                <div class="contenedor">
-                    <div class="section-images">
-                        <img src="Cuadro 1.png" alt="Obra de arte: Pintura en óleo">
-                        <img src="pinturaAcuarela.jpeg" alt="Obra de arte: Pintura en acuarela">
-                        <img src="Escultura 1.png" alt="Obra de arte: Escultura">
-                        <img src="Fotografía 1.png" alt="Obra de arte: Fotografía">
+    <section id="inicio" class="container-content">
+        <div class="container">
+            <div class="col-lg-12 espacio-elementos text-center">
+                <h1><strong>Un Nuevo Aire</strong></h1>
+                <h3>Galería de Fotos</h3>
+                <h5 class="text-subtitle">Nuestra galería se centra en el mundo diverso que otorga el arte, englobamos
+                    variados tipos de expresiones artísticas.</h5>
+                <h5>Contamos con la colaboración de artístas reconocidos internacionalmente.</h5>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="card mb-4">
+                        <img src="./pinturaOleo.png" class="card-img-top img-thumbnail" alt="Pintura en Óleo">
+                        <div class="card-body">
+                            <h5 class="card-title">“Cumbres Serenas”</h5>
+                            <h6 class="card-title">Pintura en óleo</h6>
+                            <p class="card-text">Lugar donde la naturaleza cobra vida a través de pinceladas vibrantes y
+                                colores exuberantes.</p>
+                        </div>
                     </div>
                 </div>
-            </section>
-            <h5>Estas son algunas de las obras que puedes encontrar en la galería ¡agregamos nuevas todos los meses!
+                <div class="col-lg-3">
+                    <div class="card mb-4">
+                        <img src="./pinturaAcuarela2.jpg" class="card-img-top img-thumbnail" alt="Pintura en Acuarela">
+                        <div class="card-body">
+                            <h5 class="card-title">“Armonía Alada”</h5>
+                            <h6 class="card-title">Pintura en acuarela</h6>
+                            <p class="card-text">Demuestra la delicadeza y gracia de la naturaleza en su plenitud, con
+                                un toque de romance y elegancia a la escena.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="card mb-4">
+                        <img src="./escultura.png" class="card-img-top img-thumbnail" alt="Escultura">
+                        <div class="card-body">
+                            <h5 class="card-title">“Flujo”</h5>
+                            <h6 class="card-title">Escultura</h6>
+                            <p class="card-text">Representa la fusión entre la fuerza natural y la quietud del alma.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="card mb-4">
+                        <img src="./fotografia.png" class="card-img-top img-thumbnail" alt="Fotografía">
+                        <div class="card-body">
+                            <h5 class="card-title">“Luz y Perspectiva”</h5>
+                            <h6 class="card-title">Fotografía</h6>
+                            <p class="card-text">Captura la esencia de la modernidad y la creatividad arquitectónica</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h5 class="text-center">
+                <strong>Estas son algunas de las obras que puedes encontrar en la galería ¡agregamos nuevas todos los
+                    meses!</strong>
             </h5>
         </div>
     </section>
     <footer>
-        <p>&copy; 2024 Galería de Arte</p>
+        <p>&copy; 2024 Galería de Arte Un Nuevo Aire</p>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>

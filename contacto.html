@@ -3,63 +3,86 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería de Arte - Contacto</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
 
 <body>
     <header>
-        <h1>Un Nuevo Aire</h1>
-        <h2>Sumérgete en el mundo del arte y encuentra inspiración para tu alma</h2>
-        <nav>
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="galeriafotos.html">Galería de Fotos</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand nav-title" href="index.html">Un Nuevo Aire</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="galeriafotos.html">Galería de Fotos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
         </nav>
     </header>
-    <div class="containerContact">
-        <div class="central">
-            <h2>Formulario de Contacto</h2>
+    <section id="inicio">
+        <div class="container">
+            <div class="col-lg-12 espacio-elementos text-center">
+                <h1><strong>Un Nuevo Aire</strong></h1>
+                <h3>Formulario de Contacto</h3>
+                <p>Para mayor información, contáctenos por nuestras redes sociales o escríbanos un mensaje:</p>
+            </div>
+            <div class="row form-container">
+                <div class="col-lg-6 mx-auto card bg-light mb-3 text-contact" style="max-width: 36rem;">
+                    <form>
+                        <div class="form-group">
+                            <label for="nombre">Nombre:</label>
+                            <input type="text" class="form-control" id="nombre" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Correo Electrónico:</label>
+                            <input type="email" class="form-control" id="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="tel">Teléfono:</label>
+                            <input type="fono" class="form-control" id="fono" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="direccion">Dirección:</label>
+                            <input type="text" id="direccion" name="direccion" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="tipo_solicitud">Tipo de Solicitud:</label>
+                            <select id="tipo_solicitud" name="tipo_solicitud" required>
+                                <option value="">Seleccione...</option>
+                                <option value="compra">Compra</option>
+                                <option value="consulta">Consulta</option>
+                                <option value="venta">Venta</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="mensaje">Mensaje:</label>
+                            <textarea class="form-control" id="mensaje" rows="3" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Enviar</button>
+                        <br></br>
+                    </form>
+                </div>
+            </div>
         </div>
-        <p>Póngase en contacto con nosotros para mayor información:</p>
-        <form action="#" method="POST">
-            <div class="form-group">
-                <label for="nombre">Nombre:</label>
-                <input type="text" id="nombre" name="nombre" required>
-                <span class="error-message">Por favor, introduce tu nombre.</span>
-            </div>
-            <div class="form-group">
-                <label for="email">Correo Electrónico:</label>
-                <input type="email" id="email" name="email" required>
-                <span class="error-message">Por favor, introduce un correo electrónico válido.</span>
-            </div>
-            <div class="form-group">
-                <label for="telefono">Teléfono:</label>
-                <input type="tel" id="telefono" name="telefono">
-            </div>
-            <div class="form-group">
-                <label for="direccion">Dirección:</label>
-                <input type="text" id="direccion" name="direccion">
-            </div>
-            <div class="form-group">
-                <label for="tipo_solicitud">Tipo de Solicitud:</label>
-                <select id="tipo_solicitud" name="tipo_solicitud" required>
-                    <option value="">Seleccione...</option>
-                    <option value="compra">Compra</option>
-                    <option value="consulta">Consulta</option>
-                    <option value="venta">Venta</option>
-                </select>
-                <span class="error-message">Por favor, selecciona el tipo de solicitud.</span>
-            </div>
-            <div class="form-group">
-                <label for="mensaje">Mensaje:</label>
-                <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
-                <span class="error-message">Por favor, escribe un mensaje.</span>
-            </div>
-            <button type="submit">Enviar</button>
-        </form>
-    </div>
+    </section>
+    <footer>
+        <p>&copy; 2024 Galería de Arte Un Nuevo Aire</p>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>

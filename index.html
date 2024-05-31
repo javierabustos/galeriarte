@@ -4,46 +4,94 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería de Arte - Inicio</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
 
 <body>
-
     <header>
-        <h1>Un Nuevo Aire</h1>
-        <h2>Sumérgete en el mundo del arte y encuentra inspiración para tu alma</h2>
-        <nav>
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="galeriafotos.html">Galería de Fotos</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand nav-title" href="index.html">Un Nuevo Aire</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="galeriafotos.html">Galería de Fotos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
         </nav>
     </header>
-    <section class="mainBodySection">
-        <div class="central">
-            <h2>¡Bienvenido a nuestra galería de arte! Espacio donde la creatividad cobra vida y las emociones
-                encuentran su expresión más profunda</h2>
-            <p> En nuestro santuario del arte, explorarás un mundo de belleza, innovación y significado, donde cada obra
-                cuenta una historia única y cada visita es una aventura enriquecedora. Únete a nosotros en este viaje
-                fascinante, donde la belleza y el significado se entrelazan en una experiencia única e inolvidable.</p>
+    <section id="inicio">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 espacio-elementos">
+                    <h1 class="text-center"><strong>Un Nuevo Aire</strong></h1>
+                    <h2 class="text-center">Sumérgete en el mundo del arte y encuentra inspiración para tu alma</h2>
+                    <h4 class="text-center text-main-subtitle">¡Bienvenido a nuestra galería de arte! Espacio donde la
+                        creatividad cobra vida y las emociones encuentran su expresión más profunda.</h4>
+                    <section class="mainBodySection">
+                        <div class="text-content">
+                            <p> En nuestro santuario del arte, explorarás un mundo de belleza, innovación y significado,
+                                donde cada obra cuenta una historia única y cada visita es una aventura enriquecedora.
+                                Únete a nosotros en este viaje fascinante, donde la belleza y el significado se
+                                entrelazan en una experiencia única e inolvidable.</p>
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div class="card mb-4">
+                                            <img class="img-thumbnail" src="./galeria.jpg" alt="Galería de Arte 1">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="card mb-4">
+                                            <img class="img-thumbnail" src="./galeria2.jpg" alt="Galería de Arte 2">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="card mb-4">
+                                            <img class="img-thumbnail" src="./galeria3.jpg" alt="Galería de Arte 1">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <h3>¿Quienes somos?</h3>
+                            <p>Somos un espacio dedicado a celebrar la belleza y la creatividad en todas sus formas. En
+                                nuestra galería, buscamos ofrecer una experiencia única donde el arte cobra vida y se
+                                convierte en una ventana hacia la imaginación y la emoción. Desde las obras maestras
+                                clásicas hasta las expresiones contemporáneas más vanguardistas, nuestra colección
+                                abarca una amplia variedad de estilos, técnicas y visiones artísticas.</p>
+                            <p>Nos enorgullece ser un destino para artistas emergentes y establecidos por igual,
+                                brindando un escaparate para sus talentos y una plataforma para la exploración
+                                artística.</p>
+                            <p>Con exposiciones rotativas y eventos culturales, nuestra misión es inspirar, educar y
+                                conectar a nuestra comunidad a través del poder transformador del arte.</p>
+                        </div>
+                    </section>
+                </div>
+                <div class="buttons-container">
+                    <a href="https://www.facebook.com/accounts/login/" class="btn btn-primary" target="_blank">Perfil de
+                        Facebook</a>
+                    <a href="https://wa.me/1234567890" class="btn btn-success">Chat de WhatsApp</a>
+                </div>
+            </div>
         </div>
-        <h3>¿Quienes somos?</h3>
-        <p>Somos un espacio dedicado a celebrar la belleza y la creatividad en todas sus formas. En nuestra galería,
-            buscamos ofrecer una experiencia única donde el arte cobra vida y se convierte en una ventana hacia la
-            imaginación y la emoción. Desde las obras maestras clásicas hasta las expresiones contemporáneas más
-            vanguardistas, nuestra colección abarca una amplia variedad de estilos, técnicas y visiones artísticas.
-        </p>
-        <p>Nos enorgullece ser un destino para artistas emergentes y establecidos por igual, brindando un escaparate
-            para sus talentos y una plataforma para la exploración artística.</p>
-        <p>Con exposiciones rotativas y eventos culturales, nuestra misión es inspirar, educar y conectar a nuestra
-            comunidad a través del poder transformador del arte.</p>
     </section>
-
     <footer>
-        <p>&copy; 2024 Galería de Arte</p>
+        <p>&copy; 2024 Galería de Arte Un Nuevo Aire</p>
     </footer>
-
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
