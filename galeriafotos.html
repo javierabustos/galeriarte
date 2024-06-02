@@ -7,6 +7,9 @@
     <title>Galería de Arte - Galería de Fotos</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+    <script src="galeriafotos.js"></script>
 </head>
 
 <body>
@@ -46,43 +49,48 @@
             <div class="row">
                 <div class="col-lg-3">
                     <div class="card mb-4">
-                        <img src="./pinturaOleo.png" class="card-img-top img-thumbnail" alt="Pintura en Óleo">
+                        <img src="./pinturaOleo.png" class="card-img-top img-thumbnail" alt="Pintura en Óleo" id="img1">
                         <div class="card-body">
-                            <h5 class="card-title">“Cumbres Serenas”</h5>
+                            <h5 class="card-title" id="cardTitle1">“Cumbres Serenas”</h5>
                             <h6 class="card-title">Pintura en óleo</h6>
                             <p class="card-text">Lugar donde la naturaleza cobra vida a través de pinceladas vibrantes y
                                 colores exuberantes.</p>
+                            <button type="button" class="btn btn-danger" id="deleteImg">Borrar imagen</button>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-3">
                     <div class="card mb-4">
-                        <img src="./pinturaAcuarela2.jpg" class="card-img-top img-thumbnail" alt="Pintura en Acuarela">
+                        <img src="./pinturaAcuarela2.jpg" class="card-img-top img-thumbnail" alt="Pintura en Acuarela"
+                            id="img2">
                         <div class="card-body">
-                            <h5 class="card-title">“Armonía Alada”</h5>
+                            <h5 class="card-title" id="cardTitle2">“Armonía Alada”</h5>
                             <h6 class="card-title">Pintura en acuarela</h6>
                             <p class="card-text">Demuestra la delicadeza y gracia de la naturaleza en su plenitud, con
                                 un toque de romance y elegancia a la escena.</p>
+                            <button type="button" class="btn btn-danger" id="deleteImg">Borrar imagen</button>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-3">
                     <div class="card mb-4">
-                        <img src="./escultura.png" class="card-img-top img-thumbnail" alt="Escultura">
+                        <img src="./escultura.png" class="card-img-top img-thumbnail" alt="Escultura" id="img3">
                         <div class="card-body">
-                            <h5 class="card-title">“Flujo”</h5>
+                            <h5 class="card-title" id="cardTitle3">“Flujo”</h5>
                             <h6 class="card-title">Escultura</h6>
                             <p class="card-text">Representa la fusión entre la fuerza natural y la quietud del alma.</p>
+                            <button type="button" class="btn btn-danger" id="deleteImg">Borrar imagen</button>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3">
+                <div class="col-lg-3 imgCard">
                     <div class="card mb-4">
-                        <img src="./fotografia.png" class="card-img-top img-thumbnail" alt="Fotografía">
+                        <img src="./fotografia.png" class="card-img-top img-thumbnail" alt="Fotografía" id="img4">
                         <div class="card-body">
-                            <h5 class="card-title">“Luz y Perspectiva”</h5>
+                            <h5 class="card-title" id="cardTitle4">“Luz y Perspectiva”</h5>
                             <h6 class="card-title">Fotografía</h6>
                             <p class="card-text">Captura la esencia de la modernidad y la creatividad arquitectónica</p>
+                            <button type="button" class="btn btn-danger" id="deleteImg">Borrar imagen</button>
                         </div>
                     </div>
                 </div>
@@ -96,8 +104,21 @@
     <footer>
         <p>&copy; 2024 Galería de Arte Un Nuevo Aire</p>
     </footer>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+    <div class="modal" tabindex="-1" role="dialog" id="mainModal" data-backdrop="static">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="cardTitleModal"></h5>
+                    <button type="button" class="close" id="closeModalButton">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <img src="" id="modalImage" class="modal-content">
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>

@@ -164,9 +164,21 @@ button:hover {
 
 .text-contact {
     color: rgb(0, 0, 0);
+    max-width: 36rem;
   }
 
 .nav-title {
     font-family: serif;
     font-weight: bold;
+}
+
+.modal-header {
+    padding: 0.5rem 0.5rem !important;
+}
+
+.modal-content img {
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+    margin: auto;
 }
